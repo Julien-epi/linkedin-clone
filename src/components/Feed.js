@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../css/Feed.css";
 import CreateIcon from "@mui/icons-material/Create";
-import InputOption from "../components/InputOption";
+import InputOption from "./InputOption";
 import ImageIcon from "@mui/icons-material/Image";
 import SubscriptionsIcon from "@mui/icons-material/Subscriptions";
 import EventNoteIcon from "@mui/icons-material/EventNote";
@@ -14,10 +14,7 @@ import {
   onSnapshot,
   query,
   orderBy,
-  serverTimestamp,
-  setDoc,
-  doc,
-  deleteDoc,
+  serverTimestamp
 } from "firebase/firestore";
 
 export const Feed = () => {

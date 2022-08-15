@@ -1,6 +1,6 @@
 import React from "react";
 import SearchIcon from '@mui/icons-material/Search';
-import HeaderOption from "../components/HeaderOption";
+import HeaderOption from "./HeaderOption";
 import "../css/Header.css"
 import HomeIcon from '@mui/icons-material/Home';
 import SupervisorAccountIcon from '@mui/icons-material/SupervisorAccount';
@@ -19,7 +19,7 @@ export const Header = () => {
 
         <div className="header_search">
           <SearchIcon />
-          <input type="text" />
+          <input type="text" placeholder="Search" />
         </div>
       </div>
 
