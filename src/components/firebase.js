@@ -18,6 +18,6 @@ const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
 const db = getFirestore();
 
 // Initialize Firebase Authentication and get a reference to the service
-const auth = getAuth();
+const auth = getAuth(app);
 
 export { app, db, auth };
